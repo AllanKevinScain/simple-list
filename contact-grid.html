@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          backgroundImage: {
+            'bg-1': 'url(imagens/thumb01.jpg)',
+            'bg-2': 'url(imagens/thumb02.jpg)',
+            'bg-3': 'url(imagens/thumb03.jpg)',
+            'bg-4': 'url(imagens/thumb04.jpg)',
+            'bg-5': 'url(imagens/thumb05.jpg)',
+            'bg-6': 'url(imagens/thumb06.jpg)',
+          },
+        },
+      };
+    </script>
+
+    <title>Grid de contatos</title>
+  </head>
+
+  <body class="bg-teal-300 font-[Lucida Sans] flex justify-center h-screen">
+    <ul
+      id="users-list"
+      class="flex flex-wrap gap-[16px] pt-[4%] max-w-[960px] max-h-[90%] justify-center"
+    ></ul>
+  </body>
+
+  <script type="module" src="scripts/grid-list.js"></script>
+</html>
