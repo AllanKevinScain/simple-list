@@ -23,11 +23,11 @@ users.forEach((user) => {
 
       <div class="flex gap-[16px] opacity-0 group-hover:opacity-30">
         <a href="">
-          <img src="imagens/delete.png" alt="Ícone de remoção" />
+          <img src="../imagens/delete.png" alt="Ícone de remoção" />
         </a>
 
         <a href="">
-          <img src="imagens/edit.png" alt="Ícone de edição" />
+          <img src="../imagens/edit.png" alt="Ícone de edição" />
         </a>
       </div>
   `;

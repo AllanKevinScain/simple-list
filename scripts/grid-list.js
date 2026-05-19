@@ -23,11 +23,11 @@ users.forEach((user) => {
 
       <div class="flex bg-neutral-200 h-[50px]">
         <a href="" class="w-full h-full hover:bg-neutral-300 inline-flex justify-end items-center pr-[14%]">
-          <img src="imagens/delete.png" alt="Ícone de remoção" />
+          <img src="../imagens/delete.png" alt="Ícone de remoção" />
         </a>
 
         <a href="" class="w-full h-full hover:bg-neutral-300 inline-flex justify-start items-center pl-[14%]">
-          <img src="imagens/edit.png" alt="Ícone de edição" />
+          <img src="../imagens/edit.png" alt="Ícone de edição" />
         </a>
       </div>
   `;
