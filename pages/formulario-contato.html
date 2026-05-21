@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="pt-br" class="font-sans bg-neutral-800 text-white">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../styles/index.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Formulário de cadastro</title>
+  </head>
+
+  <body class="flex justify-center items-center h-screen">
+    <form
+      action=""
+      autocomplete="off"
+      class="w-[90%] min-w-[28.125em] max-w-[35em] bg-neutral-900 p-[2.5em] rounded-3xl border-[2px] border-neutral-950 shadow-dark-neutral"
+    >
+      <fieldset class="border-none flex flex-col gap-[2em]">
+        <legend
+          class="text-center font-bold text-neutral-500 text-[2em] pb-[1.5em]"
+        >
+          Formulário de cadastro
+        </legend>
+
+        <article class="flex flex-col gap-[1em]">
+          <div class="flex flex-col gap-[.5em]">
+            <label for="name" class="w-full text-neutral-400 font-light"
+              >Nome</label
+            >
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required
+              placeholder="Digite seu nome completo"
+              class="w-full bg-neutral-950 border-b-[2px] border-neutral-700 p-[.5em] rounded-md"
+            />
+          </div>
+
+          <div class="flex flex-col gap-[.5em]">
+            <label for="email" class="w-full text-neutral-400 font-light"
+              >E-mail</label
+            >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="seuemail@email.com"
+              class="w-full bg-neutral-950 border-b-[2px] border-neutral-700 p-[.5em] rounded-md"
+            />
+          </div>
+
+          <div class="flex flex-col gap-[.5em]">
+            <label for="password" class="w-full text-neutral-400 font-light"
+              >Senha</label
+            >
+            <input
+              type="password"
+              name="password"
+              id="password"
+              required
+              placeholder="Digite sua senha"
+              class="w-full bg-neutral-950 border-b-[2px] border-neutral-700 p-[.5em] rounded-md"
+            />
+          </div>
+
+          <div class="flex flex-col gap-[.5em]">
+            <label for="password" class="w-full text-neutral-400 font-light"
+              >Confirmar senha</label
+            >
+            <div class="flex flex-col w-full">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                required
+                placeholder="Confirme sua senha"
+                class="w-full bg-neutral-950 border-b-[2px] border-neutral-700 p-[.5em] rounded-md"
+              />
+              <a
+                href="login.html"
+                class="text-neutral-400 text-end pt-[.5em] hover:underline hover:text-white"
+                >Já possuo cadastro</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <button
+          type="submit"
+          class="bg-neutral-800 text-white p-[.7em] text-[1.2em] border-none cursor-pointer"
+        >
+          Cadastrar
+        </button>
+      </fieldset>
+    </form>
+  </body>
+</html>
